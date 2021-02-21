@@ -7,7 +7,7 @@
     color: #FFFFFF;
 }
 body{
-    background: #333333;
+    background: #1b1b1b;
 }
 button, 
 button:active, 
@@ -63,8 +63,8 @@ h2.head>span{
 
 .main{
     background:no-repeat center/100%  url('img/background.jpg') ;
-    background-color: rgba(0,0, 0, 0.5);
-    background-blend-mode:multiply;
+    background-color: rgba(0,0, 0, 0.6);
+    background-blend-mode:hue;
     padding-top: 51px;
    
 }
@@ -146,7 +146,7 @@ h2.head>span{
 /*about-us*/
 
 .about-us{
-    margin: 70px 0px;
+    margin: 100px 0px;
 }
 
 .about-us__headline{
