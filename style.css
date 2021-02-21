@@ -46,6 +46,21 @@ font-size: 16px;
 line-height: 150%;
 }
 
+h2.head{
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+h2.head>span{
+    color:#D1A954;;
+}
+
+
+
 .main{
     background:no-repeat center/100%  url('img/background.jpg') ;
     background-color: rgba(0,0, 0, 0.5);
@@ -125,4 +140,43 @@ line-height: 150%;
     fill:white;
     width: 70px;
     height: 70px;
+}
+
+
+/*about-us*/
+
+.about-us{
+    margin: 70px 0px;
+}
+
+.about-us__headline{
+    margin-bottom: 100px;
+}
+h3.caption{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
+
+
+.text__caption{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+
+.text__caption>span{
+    color:#D1A954;
+}
+.about-us__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about-us__numerals{
+    justify-self: center;
 }
