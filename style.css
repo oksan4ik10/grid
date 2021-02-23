@@ -187,20 +187,27 @@ h3.caption{
     height: 250px;
     margin-bottom: 200px;
     position: relative;
-    display: flex;
-  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:1em;
+    align-items:center;
+    justify-content: space-between;
     overflow: hidden;
+
+
 }
 
 
 .slider__item{
     width: 390px;
+    height: 250px;
+    object-fit: cover;
     transition: all .6s ease-out;
+
 }
 
-.slider__item:not(:nth-child(3n)){
-    margin-right: 15px;
-}
+
 
 .slider-buttons{
     position: absolute;
