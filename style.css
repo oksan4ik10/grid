@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #FFFFFF;
+    box-sizing: border-box;
 }
 body{
     background: #1b1b1b;
@@ -179,4 +180,53 @@ h3.caption{
 }
 .about-us__numerals{
     justify-self: center;
+}
+
+/*calendar*/
+.slider{
+    height: 250px;
+    margin-bottom: 200px;
+    position: relative;
+    display: flex;
+  
+    overflow: hidden;
+}
+
+
+.slider__item{
+    width: 390px;
+    transition: all .6s ease-out;
+}
+
+.slider__item:not(:nth-child(3n)){
+    margin-right: 15px;
+}
+
+.slider-buttons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items:center;
+
+    justify-content: space-between;
+}
+
+.btn__slider{
+    cursor: pointer;
+
+    top: 110px; 
+    left: 0; 
+    bottom: 0; 
+    width: 30px;
+  
+}
+
+.btn__next{
+    left: 100%;
+    right: 0;
+
+  
 }
