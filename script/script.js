@@ -7,7 +7,8 @@ console.log(btnPrev,btnNext);
 
 count = 0;
 
-btnPrev.addEventListener('click',()=>{
+btnPrev.addEventListener('click',(e)=>{
+    e.preventDefault();
     count--;
     if (count<0) {
         count = 0;
@@ -17,7 +18,8 @@ btnPrev.addEventListener('click',()=>{
     
 });
 
-btnNext.addEventListener('click',()=>{
+btnNext.addEventListener('click',(e)=>{
+    e.preventDefault();
     if (count == 12) count = 0;
     slider.append(sliderItem[count]);
     count++;
