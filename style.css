@@ -25,12 +25,14 @@ button:focus {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 25px;
-
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    padding: 0px 20px;
+    padding: 10px 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 h1{
     font-weight: bold;
@@ -43,7 +45,7 @@ text-transform: uppercase;
 .text{
 
 font-weight: normal;
-font-size: 16px;
+font-size: 20px;
 line-height: 150%;
 }
 
@@ -89,6 +91,7 @@ h2.head>span{
 .header__nav{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 
@@ -117,9 +120,11 @@ h2.head>span{
     display: grid;
     /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 1fr;
-    padding:0px 0px 200px 0px;
+    padding:0px 0px 100px 0px;
     grid-column-gap: 100px;
 }
+
+
 
 .main__head{
     grid-column: 1/2;
@@ -137,6 +142,9 @@ h2.head>span{
     grid-row: 1/4;
     align-items: center;
 }
+
+
+
 .test{
     fill:white;
     width: 70px;
@@ -183,27 +191,30 @@ h3.caption{
 }
 
 /*calendar*/
+.calendar__head{
+    margin-bottom: 100px;
+}
 .slider{
-    height: 250px;
-    margin-bottom: 200px;
+    /* border: 1px solid red; */
+    height: 400px;
+    margin-bottom: 100px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap:1em;
-    align-items:center;
-    justify-content: space-between;
+
     overflow: hidden;
-
-
+    align-content:space-between;
 }
 
 
 .slider__item{
-    width: 390px;
-    height: 250px;
+    width: 630px;
+    height: 400px;
     object-fit: cover;
     transition: all .6s ease-out;
+
 
 }
 
@@ -237,3 +248,129 @@ h3.caption{
 
   
 }
+
+
+.staging__container{
+    margin-bottom: 100px;
+}
+
+.head__staging{
+    margin-bottom: 100px;
+}
+.staging__list{
+    /* list-style-position: inside; */
+    list-style-image: url(img/star.png);
+    font-size: 22px;
+    margin-bottom: 30px;
+
+    
+}
+.staging__item{
+    padding-left: 20px; 
+   
+}
+
+.staging__text{
+    font-size: 14px;
+}
+
+
+
+/*contakt*/
+
+.contakt__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-column-gap: 125px;
+}
+
+.contakt__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contakt__info>span{
+    margin-bottom: 10px;
+}
+
+.contakt__form{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    grid-gap:30px
+
+}
+
+#massage{
+    grid-column: 3/4;
+    grid-row: 1/3 ;
+}
+.form__text{
+    grid-column: 1/3;
+}
+.contakt__form>button{
+    width: 190px;
+    justify-self: end;
+}
+.contakt__form>input{
+    /* width: 180px; */
+    background: #444444;
+    border: 1px solid #616161;
+    padding-left: 10px;
+}
+
+
+input::placeholder{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+}
+.form__text{
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+}
+.contakt__heading{
+    margin-bottom: 100px;
+}
+.contact__container{ 
+    margin-bottom: 100px;
+}
+
+.footer__info{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text{
+    font-size: 14px;
+    line-height: 150%;
+    color: #989898;
+    font-weight: normal;
+}
+@media (max-width:400px){
+    .header{
+        grid-template-columns: 1fr;
+    }
+    .header__tel{
+        justify-self: center;
+    }
+    .main{
+        color:red;
+    }
+    .main__headline{
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+    .header__video{
+        width:300px;
+        grid-column-start: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+

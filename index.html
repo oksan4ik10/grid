@@ -13,11 +13,11 @@
             <header class="header">
                 <nav class="header__nav ">
                     <a href="#" class="header__link">Главная</a>
-                    <a href="#" class="header__link">О нас</a>
-                    <a href="#" class="header__link">Постановка на воинский учет</a>
-                    <a href="#" class="header__link">Контакты</a>
+                    <a href="#about-us" class="header__link">О нас</a>
+                    <a href="#staging" class="header__link">Постановка на воинский учет</a>
+                    <a href="#contakt" class="header__link">Контакты</a>
                 </nav>
-                <a href="tel:+7 (8142) 33 22 11" class="header__tel">+7 (8142) 33 22 11 </a>
+                <a href="test.php" class="header__tel ">Личный кабинет </a>
               
              
             </header>
@@ -41,7 +41,7 @@
     </main>
 
 
-    <div class="about-us">
+    <div class="about-us" id="about-us">
         <h2 class="about-us__headline head"> <span>о</span> нас</h2>
         <div class="container about-us__container">
             <div class="about-us__info">
@@ -73,8 +73,8 @@
     </div>
 
     <div class="calendar">
-        <div class="container calendar__container">
-            <h2 class="head"><span>Календарь</span> МО РФ на 2021 год</h2>
+        <div class=" calendar__container">
+            <h2 class="calendar__head head"><span>Календарь</span> МО РФ на 2021 год</h2>
             <div class="calendar__wraper slider">
            
                 <img src="img/calendar/2.jpg" alt="2" class="slider__item">
@@ -104,6 +104,63 @@
         
 
     </div>
+
+    <div class="staging" id="staging">
+        <div class="container staging__container">
+            <h2 class="head head__staging"><span>Постановка<span> на воинский учет*</h2>
+                <ul class="staging__list">
+                    <li class="staging__item">паспорт, свидетельство о рождении и их копии;</li>
+                    <li class="staging__item">справка с места жительства и справка о семейном положении;</li>
+                    <li class="staging__item"> справка с места работы или учебы;</li>
+                    <li class="staging__item">шесть фотографий размером 3 x 4 сантиметра;</li>
+                    <li class="staging__item">документ об образовании и его копия;</li>
+                    <li class="staging__item">выписки, справки и другие медицинские документы о состоянии здоровья. Карту из поликлиники, информацию из психоневрологического, наркологического, противотуберкулезного и кожно-венерологического диспансеров военкомат запросит самостоятельно;</li>
+                    <li class="staging__item">квалификационное удостоверение и его копия, если есть первый спортивный разряд или спортивное звание по военно-прикладному виду спорта;</li>
+                    <li class="staging__item">оригинал и копия справки или удостоверения, подтверждающих, что юноша прошел подготовку в военно-патриотических молодежных и детских объединениях (при наличии).</li>
+                </ul>
+                <p class="text staging__text">*Первоначальная постановка на воинский учет проходит каждый год с 1 января по 31 марта. Ей подлежат все юноши, которые имеют российское гражданство, постоянно проживают на территории России и которым в год постановки на учет исполняется 17 лет. Если по каким-то причинам юноша не встал на воинский учет в установленные сроки, военные комиссариаты поставят его на воинский учет и в другое время в течение календарного года.</p>
+        </div>
+    </div>
+
+    <div class="contakt" id="contakt">
+        <div class="contact__container container">
+            <h2 class="head contakt__heading"><span>Задать</span> вопрос</h2>
+            <div class="contakt__wrapper">
+                <div class="contakt__info">
+                    <span class="tel text__caption">+7 (812) 123-45-55</span>
+                    <span class="tel text__caption">+7 (812) 123-45-66</span>
+                    <span class="email text__caption">info@voenkom-sp.ru</span>
+                    <span class="text__caption adress">г.Сергиев Посад, 40 лет Октября 1А</span>
+                </div>
+                <form action="#" class="contakt__form">
+                    <input type="text" name="name" id="name" placeholder="Имя">
+                    <input type="text" name="topik" id="topik" placeholder="Тема">
+                    <input name="massage" id="massage" placeholder="Сообщение">
+                    <input type="tel" name="tel" id="tel" placeholder="Телефон">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <p class="text form__text">* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
+
+                    <button type="submit"  class="btn"> Отправить</button>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__container container">
+            <hr>
+            <div class="footer__info">
+                <p class="footer__text"> Военный комиссариат города Сергиев Посад </p>
+                <p class="footer__text">(с) Все права защищены.2021</p>
+
+            </div>
+
+        </div>
+    </footer>
+  
 <!--    
     https://www.gov.spb.ru/gov/terr/reg_kronsht/bezopasnost-i-pravoporyadok/voenkomat/
     https://xn--80ahclcogc6ci4h.xn--90anlfbebar6i.xn--p1ai/multimedia/photo/gallery.htm?id=85909@cmsPhotoGallery
