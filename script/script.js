@@ -24,3 +24,21 @@ btnNext.addEventListener('click',(e)=>{
     slider.append(sliderItem[count]);
     count++;
 })
+
+/*модалка*/
+
+const lk = document.querySelector(".header__tel"),
+modal = document.getElementById("modal"),
+close = document.querySelector(".close");
+
+
+lk.addEventListener("click",(e)=>{
+    e.preventDefault();
+    modal.classList.add("hide");
+
+
+});
+
+close.addEventListener("click",()=>{
+    modal.classList.remove("hide");
+})
