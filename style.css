@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #FFFFFF;
+}
+
 .main{
     background:no-repeat center/100%  url('img/background.jpg') ;
     background-color: rgba(0,0, 0, 0.3);
+    padding-top: 51px;
+   
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    justify-items: start;
+}
+
+.header__nav{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.header__link{
+    justify-self: stretch;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
